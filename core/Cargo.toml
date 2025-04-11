@@ -1,0 +1,21 @@
+[package]
+name = "rocker-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rocker Team"]
+description = "Core functionality for the Rocker container engine"
+
+[dependencies]
+tokio = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+async-trait = { workspace = true }
+nix = { workspace = true }
+sha2 = { workspace = true }
+base64 = { workspace = true }
+rand = { workspace = true } 

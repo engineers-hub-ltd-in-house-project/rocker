@@ -1,0 +1,13 @@
+[package]
+name = "rockerfile-parser"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rocker Team"]
+description = "Parser for Rockerfiles (similar to Dockerfiles)"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+rocker-core = { path = "../core" } 

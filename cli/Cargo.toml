@@ -1,0 +1,25 @@
+[package]
+name = "rocker-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rocker Team"]
+description = "CLI for the Rocker container engine"
+
+[dependencies]
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rocker-core = { path = "../core" }
+reqwest = { workspace = true }
+futures = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+
+[[bin]]
+name = "rocker"
+path = "src/main.rs" 
